@@ -1,10 +1,10 @@
 # AI Agent for Tic-Tac-Toe Game
 
-A modern Tic Tac Toe game built with [Flet](https://flet.dev/) in Python features an unbeatable AI opponent that uses the Minimax algorithm with alpha-beta pruning. You can play against the AI in your browser or as a desktop application!
+A modern Tic Tac Toe game built with [Flet](https://flet.dev/) in Python that features an AI agent opponent that implements the Minimax algorithm with alpha-beta pruning. You can play against the AI in your browser ([Live Demo](https://ai-agent-tic-tac-toe.onrender.com)) or as a desktop application!
 
 ## Features
 
-- **Unbeatable AI:** Uses Minimax algorithm with alpha-beta pruning.
+- **AI Agent:** Implements Minimax algorithm with alpha-beta pruning.
 - **Modern UI:** Built with Flet for a clean, responsive interface.
 - **Scoreboard:** Tracks wins, ties, and losses.
 - **Play as X or O:** Choose who goes first.
@@ -16,7 +16,9 @@ A modern Tic Tac Toe game built with [Flet](https://flet.dev/) in Python feature
 - Click on a cell to make your move.
 - The AI will respond instantly.
 - The scoreboard will update after each game.
-- Click "New Game" to play again, or "Exit Game" to close the app (in web mode, you will be prompted to close the browser tab).
+- Click "New Game" to play again, or "Exit Game" to close the app (in web mode, you will be prompted to close the browser tab[FIX: Implementation]).
+
+[Live Demo](https://ai-agent-tic-tac-toe.onrender.com)
 
 ## Getting Started
 
@@ -28,13 +30,13 @@ A modern Tic Tac Toe game built with [Flet](https://flet.dev/) in Python feature
 
 1. **Clone the repository:**
     ```sh
-    git clone https://github.com/yourusername/ai-agent-tic-tac-toe.git
+    git clone https://github.com/wano-rojano/ai-agent-tic-tac-toe.git
     cd ai-agent-tic-tac-toe
     ```
 
 2. **Install dependencies:**
     ```sh
-    pip install flet==0.27.6
+    pip install -r requirements.txt
     ```
 
 ## Run the app
@@ -44,10 +46,18 @@ A modern Tic Tac Toe game built with [Flet](https://flet.dev/) in Python feature
 Run as a desktop app:
 
 ```
+flet run
+```
+
+```
 uv run flet run
 ```
 
 Run as a web app:
+
+```
+flet run --web main.py
+```
 
 ```
 uv run flet run --web
